@@ -1,33 +1,21 @@
 <!doctype html>
 <html lang="ar" dir="rtl">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="theme-color" content="#09090d">
-<title>MB Music — Mahmoud Boghdady</title>
-<link rel="stylesheet" href="style.css">
+<title>MB Music — Mahmoud Boghdady</title><link rel="stylesheet" href="style.css">
 </head>
 <body>
 <header class="hero">
-  <nav class="nav"><div class="brand">MB <span>MUSIC</span></div><a href="#songs">الأغاني</a></nav>
-  <div class="hero-content">
-    <div class="artist-photo">MB</div>
-    <p class="eyebrow">OFFICIAL MUSIC WEBSITE</p>
-    <h1>MAHMOUD <strong>Boghdady</strong></h1>
-    <p class="bio">الموقع الرسمي لمحمود بغدادي — استماع وتحميل الأغاني من مكان واحد.</p>
-    <a class="cta" href="#songs">اسمع الآن ↓</a>
-  </div>
-</header>
-<main id="songs">
-  <section class="section-head"><div><p class="eyebrow">MY MUSIC</p><h2>الأغاني</h2></div><p>اختار أغنيتك واضغط تشغيل.</p></section>
-  <div id="songList" class="songs"></div>
-</main>
+<nav class="nav"><div class="brand">MB <span>MUSIC</span></div><a href="#songs">الأغاني</a></nav>
+<div class="hero-content">
+<img class="artist-photo" src="artist.jpg" alt="Mahmoud Boghdady">
+<p class="eyebrow">OFFICIAL MUSIC WEBSITE</p><h1>MAHMOUD <strong>Boghdady</strong></h1>
+<p class="bio">الموقع الرسمي لمحمود بغدادي — استماع وتحميل الأغاني من مكان واحد.</p>
+<a class="cta" href="#songs">اسمع الآن ↓</a>
+</div></header>
+<main id="songs"><section class="section-head"><div><p class="eyebrow">MY MUSIC</p><h2>الأغاني</h2></div><p>استماع وتحميل مباشر</p></section><div id="songList" class="songs"></div></main>
 <footer><div class="brand">MB <span>MUSIC</span></div><p>© 2026 Mahmoud Boghdady</p></footer>
-<div class="player">
-  <div class="now"><div class="mini-cover">MB</div><div><b id="nowTitle">اختر أغنية</b><small>Mahmoud Boghdady</small></div></div>
-  <div class="controls"><button id="playBtn">▶</button><div class="progress"><span id="bar"></span></div><span id="time">0:00</span></div>
-  <audio id="audio" preload="metadata"></audio>
-</div>
-<script src="script.js"></script>
-</body>
-</html>
+<div class="player"><div class="now"><img id="nowCover" src="artist.jpg"><div><b id="nowTitle">اختر أغنية</b><small>Mahmoud Boghdady</small></div></div>
+<div class="controls"><button id="playBtn">▶</button><div class="progress"><span id="bar"></span></div><span id="time">0:00</span></div><audio id="audio" preload="metadata"></audio></div>
+<script src="script.js"></script></body></html>
