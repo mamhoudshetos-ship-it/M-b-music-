@@ -1,21 +1,42 @@
 <!doctype html>
 <html lang="ar" dir="rtl">
 <head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <meta name="theme-color" content="#09090d">
-<title>MB Music — Mahmoud Boghdady</title><link rel="stylesheet" href="style.css">
+<title>MB Music — Mahmoud Boghdady</title>
+<style>
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#09090d;color:#fff;font-family:Arial,Tahoma,sans-serif;overflow-x:hidden}.hero{min-height:72vh;overflow:hidden;background:radial-gradient(circle at 70% 25%,#3b172d 0,#170f18 30%,#09090d 72%)}.nav{height:76px;max-width:1100px;margin:auto;padding:0 22px;display:flex;align-items:center;justify-content:space-between}.brand{font-size:24px;font-weight:900;letter-spacing:2px}.brand span{font-weight:400;color:#e7a3c2}.nav a{color:#bbb;text-decoration:none}.hero-content{max-width:1100px;margin:auto;padding:45px 22px 90px}.artist-photo{display:block;width:145px;height:145px;max-width:40vw;max-height:40vw;border-radius:50%;object-fit:cover;object-position:center top;border:2px solid #ffffff33;box-shadow:0 15px 60px #000}.eyebrow{font-size:11px;letter-spacing:3px;color:#d982a9;margin:22px 0 10px}.hero h1{font-size:clamp(42px,9vw,88px);line-height:.95;margin:0;letter-spacing:-3px}.hero h1 strong{display:block;color:#dba0bc}.bio{max-width:560px;color:#b9b9c2;font-size:17px;line-height:1.8}.cta{display:inline-block;background:#fff;color:#111;padding:14px 24px;border-radius:999px;text-decoration:none;font-weight:800;margin-top:12px}.section-head{max-width:1100px;margin:auto;padding:55px 22px 25px;display:flex;justify-content:space-between;align-items:end;gap:20px}.section-head h2{font-size:38px;margin:0}.section-head>p{color:#888}.songs{max-width:1100px;margin:auto;padding:10px 22px 130px;display:grid;gap:12px}.song{display:grid;grid-template-columns:64px 1fr auto;gap:15px;align-items:center;padding:13px;border:1px solid #ffffff10;background:#111116;border-radius:18px}.cover{width:64px;height:64px;border-radius:14px;object-fit:cover}.song h3{margin:0 0 5px;font-size:17px}.song p{margin:0;color:#777;font-size:12px}.song button{border:0;background:#fff;color:#111;border-radius:50%;width:44px;height:44px;font-size:17px;cursor:pointer}.download{color:#aaa;text-decoration:none;font-size:12px;margin-right:8px}.player{position:fixed;z-index:20;bottom:14px;left:50%;transform:translateX(-50%);width:min(900px,calc(100% - 24px));padding:12px 16px;background:#15151ddd;border:1px solid #ffffff18;border-radius:20px;backdrop-filter:blur(20px);display:flex;align-items:center;gap:22px;box-shadow:0 15px 50px #000}.now{display:flex;align-items:center;gap:10px;min-width:230px}.now img{width:48px;height:48px;border-radius:10px;object-fit:cover}.now small{display:block;color:#777;margin-top:3px}.controls{display:flex;align-items:center;gap:12px;flex:1}.controls button{width:42px;height:42px;border:0;border-radius:50%;cursor:pointer}.progress{height:5px;background:#333;border-radius:10px;flex:1;cursor:pointer}.progress span{display:block;height:100%;width:0;background:#d982a9;border-radius:10px}footer{text-align:center;border-top:1px solid #ffffff0d;padding:35px 22px 110px;color:#666}@media(max-width:650px){.hero{min-height:auto}.hero h1{font-size:47px}.artist-photo{width:125px;height:125px}.section-head{display:block}.song{grid-template-columns:58px 1fr auto}.cover{width:58px;height:58px}.download{display:inline-flex;align-items:center;justify-content:center;color:#fff;background:#22232b;border:1px solid #ffffff18;border-radius:999px;padding:8px 10px;font-size:12px;margin-right:6px}.player{display:block;padding:10px 12px}.now{min-width:0;margin-bottom:8px}.controls{gap:8px}.controls button{width:40px;height:40px}}
+</style>
 </head>
 <body>
 <header class="hero">
 <nav class="nav"><div class="brand">MB <span>MUSIC</span></div><a href="#songs">الأغاني</a></nav>
 <div class="hero-content">
 <img class="artist-photo" src="artist.jpg" alt="Mahmoud Boghdady">
-<p class="eyebrow">OFFICIAL MUSIC WEBSITE</p><h1>MAHMOUD <strong>Boghdady</strong></h1>
+<p class="eyebrow">OFFICIAL MUSIC WEBSITE</p>
+<h1>MAHMOUD <strong>Boghdady</strong></h1>
 <p class="bio">الموقع الرسمي لمحمود بغدادي — استماع وتحميل الأغاني من مكان واحد.</p>
 <a class="cta" href="#songs">اسمع الآن ↓</a>
 </div></header>
 <main id="songs"><section class="section-head"><div><p class="eyebrow">MY MUSIC</p><h2>الأغاني</h2></div><p>استماع وتحميل مباشر</p></section><div id="songList" class="songs"></div></main>
 <footer><div class="brand">MB <span>MUSIC</span></div><p>© 2026 Mahmoud Boghdady</p></footer>
-<div class="player"><div class="now"><img id="nowCover" src="artist.jpg"><div><b id="nowTitle">اختر أغنية</b><small>Mahmoud Boghdady</small></div></div>
-<div class="controls"><button id="playBtn">▶</button><div class="progress"><span id="bar"></span></div><span id="time">0:00</span></div><audio id="audio" preload="metadata"></audio></div>
-<script src="script.js"></script></body></html>
+<div class="player"><div class="now"><img id="nowCover" src="artist.jpg" alt=""><div><b id="nowTitle">اختر أغنية</b><small>Mahmoud Boghdady</small></div></div><div class="controls"><button id="playBtn">▶</button><div class="progress"><span id="bar"></span></div><span id="time">0:00</span></div></div>
+<audio id="audio" preload="metadata"></audio>
+<script>
+const songs=[
+["محمود بغدادي - كان يا مكان","kan-ya-makan.mp3"],
+["Mahmoud Boghdady ft Linda - أنا راجع","ana-rage3.mp3"],
+["Mahmoud Boghdady ft Zawawy - يا جدع","ya-gada3.mp3"],
+["Mahmoud Boghdady - بتعاند","bet3aned.mp3"],
+["Mahmoud Boghdady ft Zoiaa - ناس كدابة","nas-kadabba.mp3"],
+["Mahmoud Boghdady ft Jojo - كل واحد","kol-wahed.mp3"]];
+const list=document.getElementById('songList'),audio=document.getElementById('audio'),play=document.getElementById('playBtn'),bar=document.getElementById('bar'),time=document.getElementById('time'),title=document.getElementById('nowTitle');
+const fmt=s=>Number.isFinite(s)?Math.floor(s/60)+':'+String(Math.floor(s%60)).padStart(2,'0'):'0:00';
+songs.forEach(([name,file])=>{const e=document.createElement('article');e.className='song';e.innerHTML='<img class="cover" src="artist.jpg" alt=""><div><h3></h3><p>Mahmoud Boghdady</p></div><div><a class="download" href="'+file+'" download>تحميل</a><button aria-label="تشغيل">▶</button></div>';e.querySelector('h3').textContent=name;e.querySelector('button').onclick=()=>{audio.pause();audio.src=file;title.textContent=name;audio.load();audio.play().then(()=>{play.textContent='Ⅱ'}).catch(()=>{play.textContent='▶';title.textContent=name+' — اضغط تشغيل مرة أخرى'})};list.appendChild(e)});
+play.onclick=()=>{if(!audio.src)return;if(audio.paused){audio.play();play.textContent='Ⅱ'}else{audio.pause();play.textContent='▶'}};
+audio.ontimeupdate=()=>{bar.style.width=(audio.currentTime/(audio.duration||1)*100)+'%';time.textContent=fmt(audio.currentTime)};
+audio.onended=()=>{play.textContent='▶';bar.style.width='0%'};
+document.querySelector('.progress').onclick=e=>{if(audio.duration)audio.currentTime=e.offsetX/e.currentTarget.clientWidth*audio.duration};
+</script>
+</body></html>
